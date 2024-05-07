@@ -156,7 +156,7 @@ justify-content: space-between;
   transition: all 0.3s ease-in-out;
 }
 .nav-header li a {
-  color: var(--main-hover);
+  color: #fff;
   font-size: 20px;
   text-transform: capitalize;
   transition: all 0.3s ease-in-out;
@@ -171,7 +171,7 @@ justify-content: space-between;
 }
 .cart-icon{
   color: var(--main-color);
-  font-size: 30px;
+  font-size: 20px;
   transition: 0.5s;
 }
 .cart-icon:hover{
@@ -482,11 +482,11 @@ html[dir="ltr"] .cats-dispaly .cat-li a{
 .fixed-header {
   position: fixed;
   top: 0;
-  background-color: #fff;
+ 
 }
 .fixed-header .fixed-nav {
   margin: 0;
-  background-color: #fff;
+  background-color: #000;
 }
 .nav-header .img-logo img {
   max-width: 83px;
@@ -674,8 +674,12 @@ background: linear-gradient(0deg, rgba(255,255,255,0) 42%, rgba(10,37,205,0.4879
 }
 /*                          main-slider                             */
 /*                       about-us-section                             */
-.about-us-section {
-  padding: 40px 0 120px;
+.about-sec {
+  padding: 0 10px;
+  
+}
+.p-776{
+  padding-top: 776px;
 }
 
 .about-div-cont {
@@ -793,8 +797,18 @@ input[type=checkbox]{
   background: rgba(4, 12, 53, 1);
 }
 .top-header{
-  background-color: #FAF4F0;
-  padding: 15px 0;
+  background-color: transparent;
+  padding:40px 10px 0;
+ 
+}
+.main-vedio{
+  padding: 10px;
+  position: absolute;
+  top:0;
+  border-radius: 30px;
+}
+.main-vedio img{
+  border-radius: 30px;
 }
 .kayan-title{
   color: #fff;
@@ -1197,7 +1211,7 @@ input[type=checkbox]{
 .about-section{
 display: flex;
 align-items: center;
-  padding: 60px 0;
+ padding: 25px 0 0;
 }
 .about-title{
   color: #fff;
@@ -1207,19 +1221,27 @@ align-items: center;
   font-size: 46px;
   font-family: "Tajawal-Bold";
 }
+.calc{
+  margin-inline-start: calc((100vw - 1140px) / 2);
+}
+.mm-end{
+  margin-inline-end: calc((100vw - 1140px) / 2);
+  margin-inline-start: 0;
+}
 .about-pp{
   
   font-size: 24px;
   color: #fff;
-  text-align: center;
+  text-align: start;
  margin: 0;
 }
 .about-img{
-  width: 750px;
+  width: 986px;
   border-radius: 0 15px 15px 0;
 }
 .about-img img{
   border-radius: 0 15px 15px 0;
+  width: 100%;
 }
 .change-radius{
   border-radius: 0 15px 15px 0 !important;
@@ -1228,20 +1250,25 @@ align-items: center;
   border-radius: 15px 0 0 15px !important;
 }
 .collection-section{
-  padding: 0 0 50px;
+  padding: 40px 100px 0;
+}
+.contact-img{
+  margin-top: 30px;
+  border-radius: 50px;
 }
 .collection-title-2{
   color: #000;
-  font-size: 70px;
-  font-family: "Tajawal-Bold";
+  font-size: 95px;
+  font-family: "Roboto Condensed", Sans-serif;
   text-align: start;
-  margin: 0 0 30px;
+  margin: 0 0 20px;
   text-transform: capitalize;
+  font-weight: 900;
 }
 .collection-grid{
   display: grid;
   grid-template-columns: repeat(3,1fr);
-  grid-gap: 30px;
+  grid-gap: 0;
 }
 .collection-block{
   border-radius: 15px;
@@ -1297,7 +1324,7 @@ transition: 0.5s;
  background-color: var(--main-color);
  border-radius: 15px 0 0 15px;
  padding: 40px;
- width:400px;
+ width:370px;
  display: flex;
  flex-direction: column;
  align-items: center;
@@ -1700,11 +1727,14 @@ html[dir="rtl"] .footer-accordion.active:after {
     font-size: 17px;
   }
   footer {
-    padding: 50px 0 40px;
+    padding: 0 0 20px;
   }
   .social {
     justify-content: center;
     margin-bottom: 0px;
+  }
+  .top-header{
+    padding: 20px 10px 0
   }
 
   .nav-foot-cont {
@@ -1739,6 +1769,21 @@ html[dir="rtl"] .footer-accordion.active:after {
   .breadcrumb-p{
     font-size: 45px;
   }
+  .p-776 {
+    padding-top: 111px;
+}
+.calc{
+  margin-inline-start: 0;
+}
+.mm-end{
+  margin-inline-end: 0;
+}
+.collection-section {
+  padding: 10px;
+}
+.collection-title-2{
+  font-size: 40px;
+}
   .about-section{
     padding: 50px 0;
     flex-wrap: wrap;
@@ -1751,18 +1796,16 @@ html[dir="rtl"] .footer-accordion.active:after {
     inset-inline-start: 10px;
   }
   .about-block{
-    border-radius: 0;
+  
     margin-bottom: 15px;
   }
   .about-img{
     width: 100%;
-    border-radius: 0;
+   
   }
-  .about-img img{
-    border-radius: 0;
-  }
+ 
   .change-radius-2{
-    border-radius: 0 !important;
+   
     margin-bottom: 15px;
   }
   .change-radius{
